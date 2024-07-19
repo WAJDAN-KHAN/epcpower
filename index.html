@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <section class="header w-full fixed hidden md:block" style="z-index: 101;">
+        <div class="py-[15px] md:px-[40px] px-[15px] header-bg"
+            style="transition: height .2s ease,background-color .2s ease,padding .2s ease,width .2s ease,margin .2s ease,top .2s ease,transform .2s ease;">
+            <div class="flex">
+                <div class="logo md:px-[20px] px-[15px]">
+                    <img src="./assets/img/EPC_logo+CMYK+rev.svg" class="max-w-[200px] h-auto w-full" alt="">
+                </div>
+                <div class="px-[20px] w-full hidden md:flex flex-col items-end">
+                    <div class="flex items-center md:px-[40px] px-[15px] gap-5 my-2 contact-info">
+                        <img src="./assets/img/call.png" alt="">
+                        <p class="py-[10px] px-[7px] text-white maven text-[14px]">
+                            0419 661 501
+                        </p>
+                    </div>
+                    <nav class="mt-[10px] pl-[15px] py-[12px] relative">
+                        <ul class=" flex list-none p-0 m-0">
+                            <li class="">
+                                <a href="index.html"
+                                    class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="capabilities.html"
+                                    class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">
+                                    Capabilities
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href=""
+                                    class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href=""
+                                    class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-navbar fixed w-full block md:hidden py-[10px] px-[15px] bg-black">
+        <div class="flex justify-between items-center">
+            <button
+                class="text-white bg-transparent w-[40px] h-[40px] py-[13px] px-[9px] flex flex-col items-stretch gap-1 cursor-pointer"
+                id="layout-drawer-hamburger" aria-label="menu">
+                <span class="hamburger__slice"></span>
+                <span class="hamburger__slice"></span>
+                <span class="hamburger__slice"></span>
+            </button>
+            <div class="">
+                <img src="./assets/img/EPC_logo+CMYK+rev.svg" class="max-w-[90px] h-auto w-full" alt="">
+
+            </div>
+            <img src="./assets/img/call.png" alt="">
+
+        </div>
+    </section>
+
+
+    <section class="about md:px-[20px] px-[15px] pt-[90px]">
+        <div class=" md:px-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="relative cursor-pointer">
+                <a href="" class="u_1836350805"></a>
+                <div class="p-[15px] flex flex-col items-center md:items-start">
+                    <h3 class="text-[25px] maven text-[#6d8d23] font-normal">
+                        About EPC
+                    </h3>
+                    <div class=" flex flex-col items-center md:items-start text-center md:text-start">
+                        <p class="text-[16px] maven text-[#848484]  "><strong>Highest standards</strong></p>
+                        <p class="text-[16px] maven text-[#848484]">
+                            We are focused on building a reputation on quality and safety above all else. Our final
+                            product reflects our drive to complete all projects to the highest standards. Our continual
+                            growth and improvement sets a platform for what is yet to come.
+                        </p>
+                        <button class="btnn">
+                            <span class="text" id="1018386349">Read more</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="relative cursor-pointer">
+                <a href="" class="u_18363508052"></a>
+                <div class="p-[15px] flex flex-col items-center md:items-start">
+                    <h3 class="text-[25px] maven text-[#6d8d23] font-normal">
+                        Roadway Lighting
+                    </h3>
+                    <div class=" flex flex-col items-center md:items-start text-center md:text-start">
+                        <p class="text-[16px] maven text-[#848484]  "><strong>Industry best</strong></p>
+                        <p class="text-[16px] maven text-[#848484]">
+                            EPC is an electrical contracting company providing construction, maintenance, consultancy,
+                            and design services. We provide services for both public and private high and low voltage,
+                            overhead, and underground network assets, as well as traffic signals, and roadway lighting.
+
+
+                        </p>
+                        <button class="btnn">
+                            <span class="text" id="1018386349">Read more</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="relative cursor-pointer">
+                <a href="" class="u_18363508053"></a>
+                <div class="p-[15px] flex flex-col items-center md:items-start">
+                    <h3 class="text-[25px] maven text-[#6d8d23] font-normal">
+                        Projects
+                    </h3>
+                    <div class=" flex flex-col items-center md:items-start text-center md:text-start">
+                        <p class="text-[16px] maven text-[#848484]  "><strong>Australia wide</strong></p>
+                        <p class="text-[16px] maven text-[#848484]">
+                            We deliver work locally throughout Queensland and New South Wales. We work with remote mine
+                            sites and rural businesses, large corporations, state and local government departments,
+                            property developers, retail companies, hospitals, major electrical distributors, and
+                            large-medium scale solar farms.
+
+
+                        </p>
+                        <button class="btnn">
+                            <span class="text" id="1018386349">Read more</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="md:px-[20px] ">
+        <hr class="my-[10px] text-[#808080]">
+    </div>
+
+    <section class="md:px-[40px]   py-[40px]">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="service">
+                <h2 class="text-[25px] maven text-[#6d8d23] font-normal">
+                    Our Services include:
+                </h2>
+                <div class="py-2 mt-2">
+                    <ul class="p-0 list-none lisst">
+                        <li class="py-[15px]">
+                            <a href="#"
+                                class="text-[#646464] font-bold text-[16px] transition-all hover:text-[#939598]">
+                                Powerlines & High Voltage
+                            </a>
+                        </li>
+                        <li class="py-[15px]">
+                            <a href="#"
+                                class="text-[#646464] font-bold text-[16px] transition-all hover:text-[#939598]">
+                                Traffic Signals
+                            </a>
+                        </li>
+                        <li class="py-[15px]">
+                            <a href="#"
+                                class="text-[#646464] font-bold text-[16px] transition-all hover:text-[#939598]">
+                                Roadway Lighting
+                            </a>
+                        </li>
+                        <li class="py-[15px]">
+                            <a href="#"
+                                class="text-[#646464] font-bold text-[16px] transition-all hover:text-[#939598]">
+                                Electrical Construction
+                            </a>
+                        </li>
+                        <li class="py-[15px]">
+                            <a href="#"
+                                class="text-[#646464] font-bold text-[16px] transition-all hover:text-[#939598]">
+                                Timber Poles
+                            </a>
+                        </li>
+                        <li class="py-[15px]">
+                            <a href="#"
+                                class="text-[#646464] font-bold text-[16px] transition-all hover:text-[#939598]">
+                                Crane/Borer Lifter Hire (wet/dry)
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="u_1083801561"></div>
+        </div>
+    </section>
+
+    <section class="p-[20px] bg-[#e0dfdf]">
+        <div class="grid grid-cols-12 items-center">
+            <div class="col-span-12 md:col-span-6">
+                <div class="flex justify-center">
+                    <img src="./assets/img/iso-no-bg-386w.webp" style="width: auto; height: auto;" alt="">
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-6">
+                <div class="flex justify-center">
+                    <img src="./assets/img/master-electricians-australia-542w.png" style="width: auto; height: auto;"
+                        alt="">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-black">
+        <div class="py-[40px] md:px-[20px] px-[15px]">
+            <div class="grid grid-cols-12 items-center">
+                <div class="col-span-12 md:col-span-6">
+                    <div class="">
+                        <h2 class="text-align-left text-[28px] font-bold">
+                            <span style="display: unset; color: rgba(255,255,255,1);">Want to know more?</span>
+                        </h2>
+                        <h2 class="text-align-left text-[28px] font-bold">
+                            <span style="display: unset; color: rgba(255,255,255,1);">Contact us at:</span>
+                        </h2>
+                        <a href="#" style="color: #939598;" class=" text-[20px] md:text-[28px] font-bold">
+                            <span class="text" id="1476299114">admin@epcpower.com.au</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <div class="flex md:justify-center pt-3">
+                        <div class="w-[44px] h-[44px] rounded-[50%] bg-gray-500 flex justify-center items-center cursor-pointer hover:bg-[#6d8d23]"
+                            style="transition: .3s;">
+                            <img src="./assets/img/facebook-app-symbol.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="py-[40px] md:px-[20px] px-[15px]">
+            <div class="grid grid-cols-12 gap-4 ">
+                <div class="col-span-12 md:col-span-4">
+                    <div class="">
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">About Us</span>
+                            </h4>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <p class="text-align-left text-[18px]  ">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Ehrlich Power Contractors
+                                    (EPC) is an electrical contracting company who are focused on building a reputation
+                                    on quality and safety.</span>
+                            </p>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <p class="text-align-left text-[18px]  ">
+                                <span style="display: unset; color: rgba(255,255,255,1);">We have many long-standing
+                                    contracts, up to date accreditations and relationships with a wide range of clients
+                                    throughout Queensland and New South Wales.</span>
+                            </p>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <p class="text-align-left text-[18px]  ">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Our finished product reflects
+                                    our drive to complete all projects to the highest standards.</span>
+                            </p>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <p class="text-align-left text-[18px]  ">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Our continual growth and
+                                    improvement sets a platform for what is yet to come.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                    <div class="md:px-[20px] ">
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Services</span>
+                            </h4>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <li class="pb-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Powerlines & High Voltage
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Traffic Signals
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Roadway Lighting
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Electrical Construction
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Timber Poles
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Crane/Borer Lifter Hire (wet/dry)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                    <div class="md:px-[20px] ">
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Address
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Office:
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="py-[10px]">
+                            <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                style="transition: .3s;">
+                                54 Condamine Street, Toowoomba QLD, 4350
+                            </a>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Postal:
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="py-[10px]">
+                            <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                style="transition: .3s;">
+                                PO Box 36, Toowoomba QLD, 4350
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="py-[40px] md:px-[20px] px-[15px]">
+            <div class="my-[8px] py-[2px]">
+                <p class="text-align-left text-[18px]  ">
+                    <span style="display: unset; color: rgba(255,255,255,1);">© 2024
+                        Ehrlich Power Contractors Pty Ltd</span>
+                </p>
+            </div>
+            <div class="py-[4px]">
+                <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                    style="transition: .3s;">
+                    Privacy Policy
+                </a>
+            </div>
+            <div class="py-[4px]">
+                <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                    style="transition: .3s;">
+                    Website by Indigo Web
+                </a>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var header = document.querySelector('.header');
+            var previousScrollPosition = window.pageYOffset;
+
+            window.addEventListener('scroll', function () {
+                var currentScrollPosition = window.pageYOffset;
+
+                if (currentScrollPosition > previousScrollPosition && currentScrollPosition > 100) {
+                    header.classList.add('hide-elements');
+                } else {
+                    header.classList.remove('hide-elements');
+                }
+
+                previousScrollPosition = currentScrollPosition;
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

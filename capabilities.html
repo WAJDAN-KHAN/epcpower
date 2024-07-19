@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+
+
+
+    <section class="header w-full fixed hidden md:block" style="z-index: 101;">
+        <div class="py-[15px] md:px-[40px] px-[15px] header-bg"
+            style="transition: height .2s ease,background-color .2s ease,padding .2s ease,width .2s ease,margin .2s ease,top .2s ease,transform .2s ease;">
+            <div class="flex">
+                <div class="logo md:px-[20px] px-[15px]">
+                    <img src="./assets/img/EPC_logo+CMYK+rev.svg" class="max-w-[200px] h-auto w-full" alt="">
+                </div>
+                <div class="px-[20px] w-full hidden md:flex flex-col items-end">
+                    <div class="flex items-center md:px-[40px] px-[15px] gap-5 my-2 contact-info">
+                        <img src="./assets/img/call.png" alt="">
+                        <p class="py-[10px] px-[7px] text-white maven text-[14px]">
+                            0419 661 501
+                        </p>
+                    </div>
+                    <nav class="mt-[10px] pl-[15px] py-[12px] relative">
+                        <ul class=" flex list-none p-0 m-0">
+                            <li class="">
+                                <a href="index.html"
+                                    class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="capabilities.html"
+                                    class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">
+                                    Capabilities
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href=""
+                                    class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href=""
+                                    class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-navbar fixed w-full block md:hidden py-[10px] px-[15px] bg-black">
+        <div class="flex justify-between items-center">
+            <button
+                class="text-white bg-transparent w-[40px] h-[40px] py-[13px] px-[9px] flex flex-col items-stretch gap-1 cursor-pointer"
+                id="layout-drawer-hamburger" aria-label="menu">
+                <span class="hamburger__slice"></span>
+                <span class="hamburger__slice"></span>
+                <span class="hamburger__slice"></span>
+            </button>
+            <div class="">
+                <img src="./assets/img/EPC_logo+CMYK+rev.svg" class="max-w-[90px] h-auto w-full" alt="">
+
+            </div>
+            <img src="./assets/img/call.png" alt="">
+
+        </div>
+    </section>
+
+
+    <!-- Banner -->
+    <!-- Banner -->
+    <div class="pt-[70px]">
+
+        <div
+            class="flex items-center justify-center bg-[url('https://lirp.cdn-website.com/e879c863/dms3rep/multi/opt/IMG_6017-2880w.jpg')] bg-center bg-no-repeat h-[116px] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[#00000040] bg-cover">
+            <h1 class="max-md:text-[36px] max-md:font-[600] text-[48px] font-[700] text-[#FFF] z-[1] opacity-100">
+                Capabilites
+            </h1>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <!-- Content -->
+
+    <div class="flex items-start gap-[36px]  container mx-auto px-[15px] py-[40px] max-md:flex-col">
+
+        <div class="flex flex-col gap-8 max-md:w-full">
+
+            <h1 class="text-[#444] font-[700] text-[28px]">
+                About Us
+            </h1>
+
+            <div class="flex flex-col max-md:w-full w-[320px]">
+
+                <span
+                    class="text-[16px] font-[700] text-[#646464] py-[16px] group hover:opacity-80 border-b-[1px] border-[#d1d1d1] w-full cursor-pointer">
+                    Our Company
+                </span>
+
+                <span
+                    class="text-[16px] font-[700] text-[#646464] py-[16px] group hover:opacity-80 border-b-[1px] border-[#d1d1d1] w-full cursor-pointer">
+                    Capabilites
+                </span>
+
+                <span
+                    class="text-[16px] font-[700] text-[#646464] py-[16px] group hover:opacity-80 border-b-[1px] border-[#d1d1d1] w-full cursor-pointer">
+                    Team
+                </span>
+
+                <span
+                    class="text-[16px] font-[700] text-[#646464] py-[16px] group hover:opacity-80 border-b-[1px] border-[#d1d1d1] w-full cursor-pointer">
+                    Equipments
+                </span>
+
+                <span
+                    class="text-[16px] font-[700] text-[#646464] py-[16px] group hover:opacity-80 border-b-[1px] border-[#d1d1d1] w-full cursor-pointer">
+                    Accreditations
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="flex flex-col gap-[32px] w-full">
+
+            <div class="flex flex-col gap-7">
+
+                <span class="text-[18px] font-[700]">
+                    Please see listed our integrated business operating systems certified to international standards:
+                </span>
+
+                <div class="grid grid-cols-2 gap-[20px] w-full">
+
+                    <span class="text-[#939895]">
+                        Quality
+                    </span>
+
+                    <span class="text-[#939895]">
+                        ISO 9001. 2008
+                    </span>
+
+                    <span class="text-[#939895]">
+                        Safety
+                    </span>
+
+                    <span class="text-[#939895]">
+                        AS 4801. 2001
+                    </span>
+
+                    <span class="text-[#939895]">
+                        Environment
+                    </span>
+
+                    <span class="text-[#939895]">
+                        ISO 14001. 2004
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="flex flex-col gap-[20px]">
+
+                <h2 class="text-[#6D8D23] text-[24px]">
+                    Main features of this system include:
+                </h2>
+
+                <ul class="ml-[36px]">
+                    <li class="text-[#939895] list-disc">
+                        SQE Policy statements
+                    </li>
+                    <li class="text-[#939895] list-disc">
+                        Document control and Risk management
+                    </li>
+                    <li class="text-[#939895] list-disc">
+                        Control, corrective action, and preventative measures for Non-conformance
+                    </li>
+                    <li class="text-[#939895] list-disc">
+                        A complete range of SWMS for all tasks performed
+                    </li>
+                    <li class="text-[#939895] list-disc">
+                        Field and final product auditing
+                    </li>
+                    <li class="text-[#939895] list-disc">
+                        Staff and contractor inductions
+                    </li>
+                    <li class="text-[#939895] list-disc">
+                        Training procedures. Training and staff competency registers
+                    </li>
+                    <li class="text-[#939895] list-disc">
+                        Vehicle maintenance records and vehicle registers.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="flex flex-col gap-[20px]">
+
+                <h2 class="text-[#6D8D23] text-[24px]">
+                    We complete projects for a wide range of clientele, including:
+                </h2>
+
+                <ul class="ml-[36px]">
+                    <li class="text-[#939895] list-disc">
+                        State and local government departments
+                    </li>
+                    <li class="text-[#939895] list-disc">
+                        Private building companies
+                    </li>
+                    <li class="text-[#939895] list-disc">
+                        Major electrical distributors.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="flex flex-col gap-[20px]">
+
+                <h2 class="text-[#6D8D23] text-[24px]">
+                    Current business partnerships:
+                </h2>
+
+                <div class="flex flex-col">
+                    <span class="text-[#646464] font-[700]">
+                        Ergon Energy
+                    </span>
+                    <p class="text-[#646464]">
+                        Contestable works Panel. Underground subdivision works. “B Rating.”
+                        <br>
+                        Small works panel, Greater Darling Downs, Wide Bay–Burnett.
+                    </p>
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="text-[#646464] font-[700]">
+                        Energex
+                    </span>
+                    <p class="text-[#646464]">
+                        Contestable works panel. Overhead and underground works’ B Rating.”
+                    </p>
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="text-[#646464] font-[700]">
+                        Essential Energy
+                    </span>
+                    <p class="text-[#646464]">
+                        Contestable works (electrical Distributors of NSW) “B” Rating.”
+                    </p>
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="text-[#646464] font-[700]">
+                        Queensland Rail
+                    </span>
+                    <p class="text-[#646464]">
+                        Preferred contractor.
+                    </p>
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="text-[#646464] font-[700]">
+                        Department of Transport and Main Roads
+                    </span>
+                    <p class="text-[#646464]">
+                        Preferred contractor, Darling Downs and Brisbane Metro, Qld.
+                    </p>
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="text-[#646464] font-[700]">
+                        Powerlink
+                    </span>
+                    <p class="text-[#646464]">
+                        Minor Works Panel.
+                    </p>
+                </div>
+
+                <span class="text-[18px]">
+                    Other major companies include:
+                </span>
+
+                <div class="flex flex-col">
+                    <span class="text-[#646464] font-[700]">
+                        Downer
+                    </span>
+                    <span class="text-[#646464] font-[700]">
+                        Thiess
+                    </span>
+                    <span class="text-[#646464] font-[700]">
+                        Ventia
+                    </span>
+                    <span class="text-[#646464] font-[700]">
+                        Hutchinson Builders
+                    </span>
+                    <span class="text-[#646464] font-[700]">
+                        Department of Health
+                    </span>
+                    <span class="text-[#646464] font-[700]">
+                        Coastal Energy
+                    </span>
+                    <span class="text-[#646464] font-[700]">
+                        AGL
+                    </span>
+                    <span class="text-[#646464] font-[700]">
+                        JPR
+                    </span>
+                    <span class="text-[#646464] font-[700]">
+                        Evolution Mining
+                    </span>
+                </div>
+
+                <p class="text-[#646464]">
+                    We are also the licenced agent for <span class="font-[700] text-[#444]">DTM Timbers</span> for South
+                    and Western Qld. Meaning we sell at wholesale
+                    <br>
+                    prices, approved and certified timber products including crossarms, and a complete range of hardwood
+                    <br>
+                    timber <span class="font-[700] text-[#444]">Ergon Energy</span> approved power poles, ranging from
+                    8m to 23m.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <section class="p-[20px] bg-[#e0dfdf]">
+        <div class="grid grid-cols-12 items-center">
+            <div class="col-span-12 md:col-span-6">
+                <div class="flex justify-center">
+                    <img src="./assets/img/iso-no-bg-386w.webp" style="width: auto; height: auto;" alt="">
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-6">
+                <div class="flex justify-center">
+                    <img src="./assets/img/master-electricians-australia-542w.png" style="width: auto; height: auto;"
+                        alt="">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-black">
+        <div class="py-[40px] md:px-[20px] px-[15px]">
+            <div class="grid grid-cols-12 items-center">
+                <div class="col-span-12 md:col-span-6">
+                    <div class="">
+                        <h2 class="text-align-left text-[28px] font-bold">
+                            <span style="display: unset; color: rgba(255,255,255,1);">Want to know more?</span>
+                        </h2>
+                        <h2 class="text-align-left text-[28px] font-bold">
+                            <span style="display: unset; color: rgba(255,255,255,1);">Contact us at:</span>
+                        </h2>
+                        <a href="#" style="color: #939598;" class=" text-[20px] md:text-[28px] font-bold">
+                            <span class="text" id="1476299114">admin@epcpower.com.au</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <div class="flex md:justify-center pt-3">
+                        <div class="w-[44px] h-[44px] rounded-[50%] bg-gray-500 flex justify-center items-center cursor-pointer hover:bg-[#6d8d23]"
+                            style="transition: .3s;">
+                            <img src="./assets/img/facebook-app-symbol.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="py-[40px] md:px-[20px] px-[15px]">
+            <div class="grid grid-cols-12 gap-4 ">
+                <div class="col-span-12 md:col-span-4">
+                    <div class="">
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">About Us</span>
+                            </h4>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <p class="text-align-left text-[18px]  ">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Ehrlich Power Contractors
+                                    (EPC) is an electrical contracting company who are focused on building a reputation
+                                    on quality and safety.</span>
+                            </p>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <p class="text-align-left text-[18px]  ">
+                                <span style="display: unset; color: rgba(255,255,255,1);">We have many long-standing
+                                    contracts, up to date accreditations and relationships with a wide range of clients
+                                    throughout Queensland and New South Wales.</span>
+                            </p>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <p class="text-align-left text-[18px]  ">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Our finished product reflects
+                                    our drive to complete all projects to the highest standards.</span>
+                            </p>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <p class="text-align-left text-[18px]  ">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Our continual growth and
+                                    improvement sets a platform for what is yet to come.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                    <div class="md:px-[20px] ">
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Services</span>
+                            </h4>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <li class="pb-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Powerlines & High Voltage
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Traffic Signals
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Roadway Lighting
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Electrical Construction
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Timber Poles
+                                    </a>
+                                </li>
+                                <li class="py-[10px]">
+                                    <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                        style="transition: .3s;">
+                                        Crane/Borer Lifter Hire (wet/dry)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                    <div class="md:px-[20px] ">
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Address
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Office:
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="py-[10px]">
+                            <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                style="transition: .3s;">
+                                54 Condamine Street, Toowoomba QLD, 4350
+                            </a>
+                        </div>
+                        <div class="my-[8px] py-[2px]">
+                            <h4 class="text-align-left text-[18px] font-bold">
+                                <span style="display: unset; color: rgba(255,255,255,1);">Postal:
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="py-[10px]">
+                            <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                                style="transition: .3s;">
+                                PO Box 36, Toowoomba QLD, 4350
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="py-[40px] md:px-[20px] px-[15px]">
+            <div class="my-[8px] py-[2px]">
+                <p class="text-align-left text-[18px]  ">
+                    <span style="display: unset; color: rgba(255,255,255,1);">© 2024
+                        Ehrlich Power Contractors Pty Ltd</span>
+                </p>
+            </div>
+            <div class="py-[4px]">
+                <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                    style="transition: .3s;">
+                    Privacy Policy
+                </a>
+            </div>
+            <div class="py-[4px]">
+                <a href="#" class="font-normal text-[#e0dfdf] text-[16px] hover:text-[#6d8d23]"
+                    style="transition: .3s;">
+                    Website by Indigo Web
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
