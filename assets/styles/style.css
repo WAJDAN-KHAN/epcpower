@@ -266,13 +266,138 @@ body{
 
 
 
+.u_18363508051 {
+    position: relative;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  
+}
+
+.u_18363508051::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/IMG_5096-1920w.webp');
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s ease-out;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+.u_18363508051:hover::before {
+    transform: scale(1.1);
+}
 
 
+.u_183635080512 {
+    position: relative;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  
+}
+
+.u_183635080512::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/IMG_5900-1920w.webp');
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s ease-out;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+.u_183635080512:hover::before {
+    transform: scale(1.1);
+}
 
 
+.u_183635080513 {
+    position: relative;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  
+}
+
+.u_183635080513::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/IMG_5599-1920w.webp');
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s ease-out;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+.u_183635080513:hover::before {
+    transform: scale(1.1);
+}
+
+.u_1836350805125 {
+    position: relative;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  
+}
+
+.u_1836350805125::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/IMG_6040-resized-1920w.webp');
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s ease-out;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+.u_1836350805125:hover::before {
+    transform: scale(1.1);
+}
 
 
+.u_1836350805124 {
+    position: relative;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  
+}
 
+.u_1836350805124::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/EPC-SolarFarm-HVServices-Goondiwindi-1920w.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s ease-out;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+.u_1836350805124:hover::before {
+    transform: scale(1.1);
+}
 
 
 @media(max-width:500px){
