@@ -61,23 +61,47 @@
         </div>
     </section>
 
-    <section class="mobile-navbar fixed w-full block md:hidden py-[10px] px-[15px] bg-black">
+    <section class="mobile-navbar fixed w-full block md:hidden py-[10px] px-[15px] bg-black" style="z-index: 999;">
         <div class="flex justify-between items-center">
-            <button
+            <button id="layout-drawer-hamburger"
                 class="text-white bg-transparent w-[40px] h-[40px] py-[13px] px-[9px] flex flex-col items-stretch gap-1 cursor-pointer"
-                id="layout-drawer-hamburger" aria-label="menu">
+                aria-label="menu">
                 <span class="hamburger__slice"></span>
                 <span class="hamburger__slice"></span>
                 <span class="hamburger__slice"></span>
             </button>
-            <div class="">
+            <div>
                 <img src="./assets/img/EPC_logo+CMYK+rev.svg" class="max-w-[90px] h-auto w-full" alt="">
-
             </div>
             <img src="./assets/img/call.png" alt="">
-
         </div>
     </section>
+
+    <div id="mobile-menu"
+        class="fixed w-full min-h-[100vh] overflow-hidden bg-black transform translate-y-[-100%] transition-transform duration-300 ease-out z-[992]">
+        <div class="flex flex-col items-center justify-center h-[100vh]">
+            <nav class="relative">
+                <ul class="flex flex-col text-center gap-4 list-none p-0 m-0">
+                    <li>
+                        <a href="index.html"
+                            class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">Home</a>
+                    </li>
+                    <li>
+                        <a href="capabilities.html"
+                            class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">Capabilities</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">Projects</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
 
     <!-- Banner -->
@@ -529,6 +553,20 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.getElementById('layout-drawer-hamburger');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            hamburger.addEventListener('click', function () {
+                hamburger.classList.toggle('open');
+                mobileMenu.classList.toggle('open');
+            });
+        });
+
+
+    </script>
 
 </body>
 
