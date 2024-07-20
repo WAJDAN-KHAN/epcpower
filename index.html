@@ -58,26 +58,108 @@
         </div>
     </section>
 
-    <section class="mobile-navbar fixed w-full block md:hidden py-[10px] px-[15px] bg-black">
+    <section class="mobile-navbar fixed w-full block md:hidden py-[10px] px-[15px] bg-black" style="z-index: 999;">
         <div class="flex justify-between items-center">
-            <button
+            <button id="layout-drawer-hamburger"
                 class="text-white bg-transparent w-[40px] h-[40px] py-[13px] px-[9px] flex flex-col items-stretch gap-1 cursor-pointer"
-                id="layout-drawer-hamburger" aria-label="menu">
+                aria-label="menu">
                 <span class="hamburger__slice"></span>
                 <span class="hamburger__slice"></span>
                 <span class="hamburger__slice"></span>
             </button>
-            <div class="">
+            <div>
                 <img src="./assets/img/EPC_logo+CMYK+rev.svg" class="max-w-[90px] h-auto w-full" alt="">
-
             </div>
             <img src="./assets/img/call.png" alt="">
+        </div>
+    </section>
 
+    <div id="mobile-menu"
+        class="fixed w-full min-h-[100vh] overflow-hidden bg-black transform translate-y-[-100%] transition-transform duration-300 ease-out z-[992]">
+        <div class="flex flex-col items-center justify-center h-[100vh]">
+            <nav class="relative">
+                <ul class="flex flex-col text-center gap-4 list-none p-0 m-0">
+                    <li>
+                        <a href="index.html"
+                            class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">Home</a>
+                    </li>
+                    <li>
+                        <a href="capabilities.html"
+                            class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">Capabilities</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">Projects</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="font-bold text-white maven px-[15px] hover:text-[#6d8d23] text-[16px]">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <section class=" px-[15px]  md:px-0 pt-[90px] md:pt-[144px]">
+        <div class="relative">
+            <div class="sliderr">
+                <div class="slide slide1 active">
+                    <div class="md:h-[600px] h-[250px] flex flex-col justify-center items-center w-full relative bg-[url('./assets/img/IMG_5900-2304w.webp')] bg-cover bg-no-repeat"
+                        style="background-position: center center;">
+                        <h3 class="text-white md:text-[70px] font-bold relative z-10 text-[23px]">Broad range of
+                            services</h3>
+                        <button
+                            class="mt-[20px] bg-[#6d8d23] relative z-10 text-white text-[18px] font-normal mx-auto max-w-[210px] w-full rounded-[6px] h-[46px] flex justify-center items-center hover:bg-[#e0dfdf] hover:text-[black]"
+                            style="transition: .3s;">
+                            <span>Services</span>
+                        </button>
+                        <div class="color-overlay" id="1534370869"></div>
+                    </div>
+                </div>
+                <!-- Add more slides here, ensure each has the class "slide" -->
+                <div class="slide slide2">
+                    <div class="md:h-[600px] h-[250px] flex flex-col justify-center items-center w-full relative bg-[url('./assets/img/EPC-SolarFarm-HVServices-Goondiwindi-2304w.jpg')] bg-cover bg-no-repeat"
+                        style="background-position: center center;">
+                        <h3 class="text-white md:text-[70px] font-bold relative z-10 text-[23px]">Look at past projects
+                        </h3>
+                        <button
+                            class="mt-[20px] bg-[#6d8d23] relative z-10  text-white text-[18px] font-normal mx-auto max-w-[210px] w-full rounded-[6px] h-[46px] flex justify-center items-center hover:bg-[#e0dfdf] hover:text-[black]"
+                            style="transition: .3s;">
+                            <span>Projects</span>
+                        </button>
+                        <div class="color-overlay" id="1534370870"></div>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="md:h-[600px] h-[250px] flex flex-col justify-center items-center w-full relative bg-[url('./assets/img/IMG_6017-2304w.jpg')] bg-cover bg-no-repeat"
+                        style="background-position: center center;">
+                        <h3 class="text-white md:text-[70px] font-bold relative z-10 text-[23px]">High voltage
+                            specialists</h3>
+                        <button
+                            class="mt-[20px] bg-[#6d8d23] relative z-10 text-white text-[18px] font-normal mx-auto max-w-[210px] w-full rounded-[6px] h-[46px] flex justify-center items-center hover:bg-[#e0dfdf] hover:text-[black]"
+                            style="transition: .3s;">
+                            <span>Our Company</span>
+                        </button>
+                        <div class="color-overlay" id="1534370870"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-direction-nav">
+                <a href="" class="flex-prev h-[40px] w-[40px] opacity-[.6] hover:opacity-[1]">
+                    <img src="./assets/img/left.png" class="h-[40px] w-[40px]" alt="">
+                </a>
+                <a href="" class="flex-next h-[40px] w-[40px] opacity-[.6] hover:opacity-[1]">
+                    <img src="./assets/img/next.png" class="h-[40px] w-[40px]" alt="">
+                </a>
+            </div>
         </div>
     </section>
 
 
-    <section class="about md:px-[20px] px-[15px] pt-[90px]">
+    <section class="about md:px-[20px] px-[15px] pt-[40px] ">
         <div class=" md:px-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="relative cursor-pointer">
                 <a href="" class="u_1836350805"></a>
@@ -413,6 +495,63 @@
 
 
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevButton = document.querySelector('.flex-prev');
+            const nextButton = document.querySelector('.flex-next');
+            let currentIndex = 0;
+            const slideInterval = 5000; // 5 seconds
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                showSlide(currentIndex);
+            }
+
+            nextButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                nextSlide();
+            });
+
+            prevButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                prevSlide();
+            });
+
+            setInterval(nextSlide, slideInterval);
+
+            // Show the first slide initially
+            showSlide(currentIndex);
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.getElementById('layout-drawer-hamburger');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            hamburger.addEventListener('click', function () {
+                hamburger.classList.toggle('open');
+                mobileMenu.classList.toggle('open');
+            });
+        });
+
+
+    </script>
+
+
 </body>
 
 </html>
