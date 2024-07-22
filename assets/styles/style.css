@@ -398,7 +398,9 @@ body{
 .u_1836350805124:hover::before {
     transform: scale(1.1);
 }
-
+.contact-info:hover .call-icon {
+    content: url('../img/phone-call.png');
+}
 
 @media(max-width:500px){
     .service{
