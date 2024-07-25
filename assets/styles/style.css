@@ -402,6 +402,9 @@ body{
     content: url('../img/phone-call.png');
 }
 
+.group:hover .group-hover\:block {
+    display: block;
+}
 @media(max-width:500px){
     .service{
         padding: 20px 15px;
