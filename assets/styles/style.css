@@ -42,58 +42,8 @@ body{
 .maven{
     font-family: "Maven Pro", sans-serif !important;
 }
-
-.u_1836350805 {
-    position: relative;
-    padding-top: 320px !important;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* Ensure the zoom effect doesn't go outside the anchor */
-}
-
-.u_1836350805::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../img/IMG_6008-1280w.webp');
-    background-size: cover;
-    background-position: center;
-    transition: transform .2s ease-out;
-    z-index: -1; /* Ensure the image is behind the content */
-}
-
-.u_1836350805:hover::before {
-    transform: scale(1.1);
-}
-.u_18363508052 {
-    position: relative;
-    padding-top: 320px !important;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* Ensure the zoom effect doesn't go outside the anchor */
-}
-
-.u_18363508052::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../img/62177185_909927336025029_8481879498369794048_n-1280w.webp');
-    background-size: cover;
-    background-position: center;
-    transition: transform .2s ease-out;
-    z-index: -1; /* Ensure the image is behind the content */
-}
-
-.u_18363508052:hover::before {
-    transform: scale(1.1);
-}
-
+.u_1836350805,
+.u_18363508052,
 .u_18363508053 {
     position: relative;
     padding-top: 320px !important;
@@ -102,6 +52,8 @@ body{
     overflow: hidden; /* Ensure the zoom effect doesn't go outside the anchor */
 }
 
+.u_1836350805::before,
+.u_18363508052::before,
 .u_18363508053::before {
     content: '';
     position: absolute;
@@ -109,16 +61,30 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../img/IMG_5096-1280w.webp');
     background-size: cover;
     background-position: center;
     transition: transform .2s ease-out;
     z-index: -1; /* Ensure the image is behind the content */
 }
 
-.u_18363508053:hover::before {
+.u_1836350805::before {
+    background-image: url('../img/IMG_6008-1280w.webp');
+}
+
+.u_18363508052::before {
+    background-image: url('../img/62177185_909927336025029_8481879498369794048_n-1280w.webp');
+}
+
+.u_18363508053::before {
+    background-image: url('../img/IMG_5096-1280w.webp');
+}
+
+.card-1:hover .u_1836350805::before,
+.card-1:hover .u_18363508052::before,
+.card-1:hover .u_18363508053::before {
     transform: scale(1.1);
 }
+
 
 .btnn{
     max-width: 140px;
@@ -265,23 +231,16 @@ body{
 }
 
 
-.project-card {
+
+.carddd {
     position: relative;
-    overflow: hidden;
-    transition: box-shadow .3s ease, transform .3s ease;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0 !important;
+    min-height: 225px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: rgba(0, 0, 0, 0.35) 0 10px 20px 0;
-}
-
-.u_18363508051,
-.u_183635080512,
-.u_183635080513,
-.u_1836350805124,
-.u_1836350805125 {
+.image-link {
     position: relative;
     height: 225px;
     display: flex;
@@ -289,11 +248,7 @@ body{
     overflow: hidden;  
 }
 
-.u_18363508051::before,
-.u_183635080512::before,
-.u_183635080513::before,
-.u_1836350805124::before,
-.u_1836350805125::before {
+.image-link::before {
     content: '';
     position: absolute;
     top: 0;
@@ -303,37 +258,32 @@ body{
     background-size: cover;
     background-position: center;
     transition: transform .2s ease-out;
-    z-index: -1;
+    z-index: -1; /* Ensure the image is behind the content */
 }
 
-.u_18363508051:hover::before,
-.u_183635080512:hover::before,
-.u_183635080513:hover::before,
-.u_1836350805124:hover::before,
-.u_1836350805125:hover::before {
-    transform: scale(1.1);
-}
-
-.u_18363508051::before {
+.u_18363508051 .image-link::before {
     background-image: url('../img/IMG_5096-1920w.webp');
 }
 
-.u_183635080512::before {
+.u_183635080512 .image-link::before {
     background-image: url('../img/IMG_5900-1920w.webp');
 }
 
-.u_183635080513::before {
+.u_183635080513 .image-link::before {
     background-image: url('../img/IMG_5599-1920w.webp');
 }
 
-.u_1836350805124::before {
-    background-image: url('../img/EPC-SolarFarm-HVServices-Goondiwindi-1920w.jpg');
-}
-
-.u_1836350805125::before {
+.u_1836350805125 .image-link::before {
     background-image: url('../img/IMG_6040-resized-1920w.webp');
 }
 
+.u_1836350805124 .image-link::before {
+    background-image: url('../img/EPC-SolarFarm-HVServices-Goondiwindi-1920w.jpg');
+}
+
+.carddd:hover .image-link::before {
+    transform: scale(1.1);
+}
 
 
 .group:hover .fa-chevron-down {
