@@ -265,87 +265,22 @@ body{
 }
 
 
-
-.u_18363508051 {
+.project-card {
     position: relative;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;  
+    overflow: hidden;
+    transition: box-shadow .3s ease, transform .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0 !important;
 }
 
-.u_18363508051::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../img/IMG_5096-1920w.webp');
-    background-size: cover;
-    background-position: center;
-    transition: transform .2s ease-out;
-    z-index: -1; /* Ensure the image is behind the content */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0 10px 20px 0;
 }
 
-.u_18363508051:hover::before {
-    transform: scale(1.1);
-}
-
-
-.u_183635080512 {
-    position: relative;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;  
-}
-
-.u_183635080512::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../img/IMG_5900-1920w.webp');
-    background-size: cover;
-    background-position: center;
-    transition: transform .2s ease-out;
-    z-index: -1; /* Ensure the image is behind the content */
-}
-
-.u_183635080512:hover::before {
-    transform: scale(1.1);
-}
-
-
-.u_183635080513 {
-    position: relative;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;  
-}
-
-.u_183635080513::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../img/IMG_5599-1920w.webp');
-    background-size: cover;
-    background-position: center;
-    transition: transform .2s ease-out;
-    z-index: -1; /* Ensure the image is behind the content */
-}
-
-.u_183635080513:hover::before {
-    transform: scale(1.1);
-}
-
+.u_18363508051,
+.u_183635080512,
+.u_183635080513,
+.u_1836350805124,
 .u_1836350805125 {
     position: relative;
     height: 225px;
@@ -354,6 +289,10 @@ body{
     overflow: hidden;  
 }
 
+.u_18363508051::before,
+.u_183635080512::before,
+.u_183635080513::before,
+.u_1836350805124::before,
 .u_1836350805125::before {
     content: '';
     position: absolute;
@@ -361,42 +300,48 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../img/IMG_6040-resized-1920w.webp');
     background-size: cover;
     background-position: center;
     transition: transform .2s ease-out;
-    z-index: -1; /* Ensure the image is behind the content */
+    z-index: -1;
 }
 
+.u_18363508051:hover::before,
+.u_183635080512:hover::before,
+.u_183635080513:hover::before,
+.u_1836350805124:hover::before,
 .u_1836350805125:hover::before {
     transform: scale(1.1);
 }
 
+.u_18363508051::before {
+    background-image: url('../img/IMG_5096-1920w.webp');
+}
 
-.u_1836350805124 {
-    position: relative;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;  
+.u_183635080512::before {
+    background-image: url('../img/IMG_5900-1920w.webp');
+}
+
+.u_183635080513::before {
+    background-image: url('../img/IMG_5599-1920w.webp');
 }
 
 .u_1836350805124::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-image: url('../img/EPC-SolarFarm-HVServices-Goondiwindi-1920w.jpg');
-    background-size: cover;
-    background-position: center;
-    transition: transform .2s ease-out;
-    z-index: -1; /* Ensure the image is behind the content */
 }
 
-.u_1836350805124:hover::before {
-    transform: scale(1.1);
+.u_1836350805125::before {
+    background-image: url('../img/IMG_6040-resized-1920w.webp');
+}
+
+
+
+.group:hover .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.transition-transform {
+    transition: transform 0.3s;
 }
 .contact-info:hover .call-icon {
     content: url('../img/phone-call.png');
@@ -405,6 +350,26 @@ body{
 .group:hover .group-hover\:block {
     display: block;
 }
+
+
+.muted{
+    color: #939895;
+}
+
+.headingg{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.green-text{
+    color: #6D8D23;
+    font-size: 24px;
+}
+.headin2{
+    color: #646464;
+    font-weight: 700;
+}
+
 @media(max-width:500px){
     .service{
         padding: 20px 15px;
@@ -414,6 +379,15 @@ body{
         padding: 150px 0 !important;
         min-height: 100px;
     }
+    .sliderr {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 250px; /* Set a height to make sure the slider container has height */
+    }
+}
+@media(max-width:800px){
+ 
     .sliderr {
         position: relative;
         overflow: hidden;
