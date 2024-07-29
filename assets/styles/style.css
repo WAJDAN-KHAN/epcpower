@@ -1,15 +1,15 @@
-body{
+body {
     padding: 0;
     height: 0;
-    font-family: "Maven Pro", sans-serif ;
+    font-family: "Maven Pro", sans-serif;
 
 }
 
-.header-bg{ 
-        background-repeat: no-repeat!important;
-        background-image: url('../img/Header-1200x200-1920w.webp')!important;
-        background-size: cover!important;
-   
+.header-bg {
+    background-repeat: no-repeat !important;
+    background-image: url('../img/Header-1200x200-1920w.webp') !important;
+    background-size: cover !important;
+
 }
 
 
@@ -39,9 +39,10 @@ body{
 
 
 
-.maven{
+.maven {
     font-family: "Maven Pro", sans-serif !important;
 }
+
 .u_1836350805,
 .u_18363508052,
 .u_18363508053 {
@@ -49,7 +50,8 @@ body{
     padding-top: 320px !important;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Ensure the zoom effect doesn't go outside the anchor */
+    overflow: hidden;
+    /* Ensure the zoom effect doesn't go outside the anchor */
 }
 
 .u_1836350805::before,
@@ -64,7 +66,8 @@ body{
     background-size: cover;
     background-position: center;
     transition: transform .2s ease-out;
-    z-index: -1; /* Ensure the image is behind the content */
+    z-index: -1;
+    /* Ensure the image is behind the content */
 }
 
 .u_1836350805::before {
@@ -86,7 +89,7 @@ body{
 }
 
 
-.btnn{
+.btnn {
     max-width: 140px;
     background-color: #6d8d23;
     border-radius: 6px;
@@ -106,73 +109,85 @@ body{
     padding: 10px 20px !important;
 
 }
-.btnn span{
-    
+
+.btnn span {
+
     font-size: 18px;
     font-weight: normal;
     font-family: "Maven Pro", sans-serif !important;
     transition: color .2s ease;
 }
-.btnn:hover{
-    background-color: rgba(224,223,223,1);
-    color: rgba(100,100,100,1);
+
+.btnn:hover {
+    background-color: rgba(224, 223, 223, 1);
+    color: rgba(100, 100, 100, 1);
 }
-.service{
+
+.service {
     padding: 30px 40px 30px 70px;
 }
+
 .lisst li {
     position: relative;
 }
 
 .lisst li::after {
     content: '';
-    display: block; /* Ensure the pseudo-element is a block */
+    display: block;
+    /* Ensure the pseudo-element is a block */
     width: 100%;
     height: 1px;
-    background-color: #d1d1d1; /* Change color to your preferred border color */
+    background-color: #d1d1d1;
+    /* Change color to your preferred border color */
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
- 
- .u_1083801561 {
-    background-color: rgba(255,255,255,1) !important;
-    background-repeat: no-repeat!important;
-    background-image: url('../img/ehr-Picture1-1920w.webp')!important;
-    background-size: cover!important;
-    
+
+.u_1083801561 {
+    background-color: rgba(255, 255, 255, 1) !important;
+    background-repeat: no-repeat !important;
+    background-image: url('../img/ehr-Picture1-1920w.webp') !important;
+    background-size: cover !important;
+
     padding: 30px 70px 30px 40px !important;
-    background-position: 50% 50% !important;    
+    background-position: 50% 50% !important;
 }
- 
-  .color-overlay {
+
+.color-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.25);
+    background-color: rgba(0, 0, 0, .25);
     display: block;
 }
+
 .sliderr {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 600px; /* Set a height to make sure the slider container has height */
+    height: 600px;
+    /* Set a height to make sure the slider container has height */
 }
+
 .slide {
     width: 100%;
-    height: 100%; /* Ensure each slide takes full height */
+    height: 100%;
+    /* Ensure each slide takes full height */
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
 .slide.active {
     opacity: 1;
 }
+
 .flex-direction-nav {
     position: absolute;
     top: 50%;
@@ -181,7 +196,9 @@ body{
     justify-content: space-between;
     transform: translateY(-50%);
 }
-.flex-prev, .flex-next {
+
+.flex-prev,
+.flex-next {
     cursor: pointer;
 }
 
@@ -237,7 +254,7 @@ body{
     min-height: 225px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;  
+    overflow: hidden;
 }
 
 .image-link {
@@ -245,7 +262,7 @@ body{
     height: 225px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;  
+    overflow: hidden;
 }
 
 .image-link::before {
@@ -258,7 +275,8 @@ body{
     background-size: cover;
     background-position: center;
     transition: transform .2s ease-out;
-    z-index: -1; /* Ensure the image is behind the content */
+    z-index: -1;
+    /* Ensure the image is behind the content */
 }
 
 .u_18363508051 .image-link::before {
@@ -293,6 +311,7 @@ body{
 .transition-transform {
     transition: transform 0.3s;
 }
+
 .contact-info:hover .call-icon {
     content: url('../img/phone-call.png');
 }
@@ -302,47 +321,97 @@ body{
 }
 
 
-.muted{
+.muted {
     color: #939895;
     font-weight: normal !important;
 }
 
-.headingg{
+.main-content h1 {
     font-size: 18px;
     font-weight: 700;
 }
 
-.green-text{
+.main-content h2 {
     color: #6D8D23;
     font-size: 24px;
 }
-.headin2{
+
+.headin2 {
     color: #646464;
     font-weight: 700;
 }
 
-@media(max-width:500px){
-    .service{
+
+.table {
+    width: 100%;
+}
+
+.table tbody tr th {
+    text-align: left;
+    padding: 1rem;
+    color: #939895;
+    font-weight: normal !important;
+}
+
+.table tbody tr td {
+    text-align: left;
+    padding: 1rem;
+    color: #939895;
+    font-weight: normal !important;
+}
+
+
+.main-content ul {
+    margin-left: 36px;
+}
+
+.main-content ul li {
+    list-style-type: disc;
+    color: #939895;
+}
+
+.main-content p {
+    color: #646464;
+}
+
+.main-content strong {
+    color: #646464;
+    display: block;
+
+}
+
+.main-content h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@media(max-width:500px) {
+    .service {
         padding: 20px 15px;
     }
-    .u_1083801561{
+
+    .u_1083801561 {
         margin: 0 !important;
         padding: 150px 0 !important;
         min-height: 100px;
     }
+
     .sliderr {
         position: relative;
         overflow: hidden;
         width: 100%;
-        height: 250px; /* Set a height to make sure the slider container has height */
+        height: 250px;
+        /* Set a height to make sure the slider container has height */
     }
 }
-@media(max-width:800px){
- 
+
+@media(max-width:800px) {
+
     .sliderr {
         position: relative;
         overflow: hidden;
         width: 100%;
-        height: 250px; /* Set a height to make sure the slider container has height */
+        height: 250px;
+        /* Set a height to make sure the slider container has height */
     }
 }
