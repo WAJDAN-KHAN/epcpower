@@ -304,6 +304,7 @@ body{
 
 .muted{
     color: #939895;
+    font-weight: normal !important;
 }
 
 .headingg{
